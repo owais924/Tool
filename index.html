@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load and Hours Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Load and Hours Calculator</h2>
+        <form id="loadForm">
+            <label for="voltage">Select Voltage:</label>
+            <select id="voltage">
+                <option value="48">48V</option>
+                <option value="51.2">51.2V</option>
+            </select>
+            <div class="equipment">
+                <h3>Equipment</h3>
+                <label for="lights">Lights (Qty):</label>
+                <input type="number" id="lights" min="0" value="0">
+                
+                <label for="fans">Fans (Qty):</label>
+                <input type="number" id="fans" min="0" value="0">
+
+                <label for="ac1ton">A/C 1 ton (Qty):</label>
+                <input type="number" id="ac1ton" min="0" value="0">
+
+                <label for="ac15ton">A/C 1.5 ton (Qty):</label>
+                <input type="number" id="ac15ton" min="0" value="0">
+
+                <label for="ac2ton">A/C 2 ton (Qty):</label>
+                <input type="number" id="ac2ton" min="0" value="0">
+
+                <label for="fridge">Fridge (Qty):</label>
+                <input type="number" id="fridge" min="0" value="0">
+
+                <label for="motor">Motor (Qty):</label>
+                <input type="number" id="motor" min="0" value="0">
+                <label for="iron">Iron (Qty):</label>
+                <input type="number" id="iron" min="0" value="0">
+
+                <label for="tv">TV (Qty):</label>
+                <input type="number" id="tv" min="0" value="0">
+
+                <label for="washingMachine">Washing Machine (Qty):</label>
+                <input type="number" id="washingMachine" min="0" value="0">
+
+                <label for="oven">Oven (Qty):</label>
+                <input type="number" id="oven" min="0" value="0">
+
+                <label for="airCooler">Air Cooler (Qty):</label>
+                <input type="number" id="airCooler" min="0" value="0">
+            </div>
+            <button type="button" onclick="calculateHours()">Calculate</button>
+        </form>
+        <div class="result">
+            <h3>Result:</h3>
+            <p id="resultHours">Hours: </p>
+            <p id="totalLoad">TotalLoad:</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
